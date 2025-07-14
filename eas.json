@@ -3,23 +3,9 @@
     "appVersionSource": "remote"
   },
   "build": {
-    "preview": {
-      "android": {
-        "buildType": "apk"
-      }
-    },
-    "release": {
-      "android": {
-        "buildType": "app-bundle"
-      }
-    },
     "production": {
       "android": {
-        "buildType": "apk",
-        "cache": {
-           "disabled": true
-         },
-        "autoIncrement": true
+        "buildType": "apk"
       }
     }
   }
