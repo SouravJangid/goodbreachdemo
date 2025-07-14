@@ -1,9 +1,25 @@
 {
+  "cli": {
+    "appVersionSource": "remote"
+  },
   "build": {
     "preview": {
       "android": {
-        "gradleCommand": ":app:assembleRelease",
         "buildType": "apk"
+      }
+    },
+    "release": {
+      "android": {
+        "buildType": "app-bundle"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "apk",
+        "cache": {
+           "disabled": true
+         },
+        "autoIncrement": true
       }
     }
   }
